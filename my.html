@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+</head>
+<body>
+        <h1>{{ user.name }}</h1>
+        <h2>I like to:</h2>
+        <ul>
+            {% for like in user.likes %}
+            <li>
+            {{ like }}
+            </li>
+            {% endfor %}
+        </ul>
+    <script src="main.js"></script>
+    <script src="app.js"></script>
+    <script src="other-app.js"></script>
+</body>
+</html>
